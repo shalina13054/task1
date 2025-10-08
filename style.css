@@ -1,0 +1,202 @@
+body {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    background: linear-gradient to bottom, #fde9e9, #ffe6e6); /* Soft gradient background */
+    color: #4a2d3e; /* Deep purple/maroon text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d1a7b4; /* Muted rose color */
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive; /* Script font for titles */
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: -30px; /* Overlap with header */
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2em;
+    color: #a45377; /* Rose/wine color */
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #6a4a5e;
+}
+
+.fancy-input, textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #d1a7b4;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.fancy-input:focus, textarea:focus {
+    border-color: #a45377;
+    outline: none;
+    box-shadow: 0 0 8px rgba(164, 83, 119, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.char-count {
+    text-align: right;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.action-button {
+    background-color: #e57373; /* Soft red/pink */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(229, 115, 115, 0.4);
+    margin: 15px 10px;
+}
+
+.action-button:hover {
+    background-color: #ce6666;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(229, 115, 115, 0.6);
+}
+
+.secondary-button {
+    background-color: #b39ddb; /* Soft purple */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 15px 10px;
+}
+
+.secondary-button:hover {
+    background-color: #9c88cb;
+    transform: translateY(-2px);
+}
+
+.hint {
+    font-style: italic;
+    color: #888;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #4a2d3e;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for preview page */
+.letter-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envelope {
+    background-color: #fffaf0; /* Creamy white */
+    border: 1px solid #d1a7b4;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 550px;
+    position: relative;
+    text-align: left;
+    min-height: 250px;
+}
+
+.stamp {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5em;
+    line-height: 1;
+    color: #e57373;
+    transform: rotate(10deg);
+}
+
+.letter-content {
+    font-family: 'Brush Script MT', cursive; /* Handwritten style font for letter content */
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #5d3f4b;
+}
+
+.letter-greeting, .letter-closing {
+    margin-bottom: 20px;
+}
+
+.letter-body {
+    margin-bottom: 30px;
+}
+
+.letter-closing {
+    text-align: right;
+    margin-top: 40px;
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+/* Fallback for Brush Script MT (system font) if Google Fonts not used */
+/* @font-face {
+    font-family: 'Brush Script MT';
+    src: local('Brush Script MT'), local('Brush Script Std'), local('Brush Script');
+} */
