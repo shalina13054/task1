@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Love Letter Preview</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Your Beautiful Letter</h1>
+        <p>A glimpse of your devotion.</p>
+    </header>
+
+    <main>
+        <section class="letter-preview">
+            <div class="envelope">
+                <div class="stamp">❤️</div>
+                <div class="letter-content">
+                    <p class="letter-greeting">Dearest <span id="displayRecipient"></span>,</p>
+                    <p class="letter-body" id="displayMessage"></p>
+                    <p class="letter-closing">With all my love,<br>Your Secret Admirer</p>
+                </div>
+            </div>
+            <p class="hint">Happy with your words? Finalize it!</p>
+            <button id="finalizeButton" class="action-button">Finalize & Send</button>
+            <button onclick="window.location.href='index.html'" class="secondary-button">Edit Letter</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eternal Ink Letters</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
