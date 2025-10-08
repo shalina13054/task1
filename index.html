@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Your Perfect Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Write Your Heart Out</h1>
+        <p>A truly personal love letter, crafted with care.</p>
+    </header>
+
+    <main>
+        <section class="letter-builder">
+            <h2>Start Your Letter</h2>
+            <div class="input-group">
+                <label for="recipientName">To whom do you dedicate this letter?</label>
+                <input type="text" id="recipientName" placeholder="E.g., My Dearest Love" class="fancy-input">
+            </div>
+            <div class="input-group">
+                <label for="mainMessage">Your heartfelt message (up to 200 characters):</label>
+                <textarea id="mainMessage" maxlength="200" placeholder="E.g., Every moment with you is a blessing..."></textarea>
+                <p class="char-count"><span id="charCounter">0</span>/200 characters</p>
+            </div>
+            
+            <button id="previewButton" class="action-button">Preview Your Letter</button>
+            <p class="hint">Click "Preview Your Letter" to see it beautifully presented!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eternal Ink Letters</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
